@@ -46,3 +46,13 @@ html {
   margin-left: 0 !important;
 }
 
+.bi {
+  height: 2rem;
+  width: auto;
+  fill: #401115;
+}
+
+.arrow{
+  position: absolute;
+  right: 1rem;
+}

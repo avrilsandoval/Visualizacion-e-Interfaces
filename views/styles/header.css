@@ -1,0 +1,32 @@
+.bg-body-tertiary {
+    background-color: #401115 !important;
+}
+
+.navbar {
+    padding: 1rem 2rem;
+}
+
+img {
+    height: 4.5rem;
+}
+
+.user-info img {
+    border-radius: 50%;
+    margin-left: 1rem;
+}
+
+.user-info {
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+}
+
+a{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}

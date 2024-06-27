@@ -104,23 +104,22 @@
 
 
                 <form>
-                    <div class="mb-3 w-50 mx-auto">
+                    <div class="w-75 mx-auto col-md-6 mb-3">
                      
                         <input type="email" class="form-control" id="email" placeholder="Correo electrónico">
                     </div>
 
                     
-                    <div class="mb-3 w-50 mx-auto">
-                  
+                    <div class="w-75 mx-auto col-md-6 mb-3">
                         <input type="password" class="form-control" id="password" placeholder="Contraseña">
                     </div>
 
                 
-                    <div class="text-center m-3">
+                    <div class="text-center m-3 mt-4">
                     <a href="registro.html" class="textoadicional">¿Olvidaste la contraseña?</a>
                 </div>
                 <div class="border-top my-3 w-25 mx-auto"></div>
-                <div class="row justify-content-center mt-3">
+                <div class="row justify-content-center mt-4">
                     
                     <button type="submit" class="btn btn-primary btn-md w-50 botoniniciosesion">Iniciar Sesión</button>
                
@@ -133,14 +132,6 @@
             </div>
             </div>
         </div>
-        <script>
-            document.addEventListener("DOMContentLoaded", function(){
-            
-                let nombreUsuario = localStorage.getItem('usuarioNombre');
-                if (nombreUsuario) {
-                    document.getElementById("nombreUsuario").textContent = nombreUsuario;
-                }
-            });
-            </script>
+       
 </body>
 </html>

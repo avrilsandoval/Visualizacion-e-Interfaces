@@ -9,50 +9,58 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles/home-style.css">
-    <title>Home</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-      $(function () {
-        $("#header").load("headerUsuario.html");
-      });
-    </script>
+    <link rel="stylesheet" href="styles/home-style.css" />
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Inicio</title>
   </head>
   <body>
-    <div id="header"></div>
-      <div class="background-image">
-        <img src="img/universidad-img.jpg" class="img-fluid" alt="Universidad Argentina de Desarrollo">
-        <h1 class="title">Autogestión</h1>
-        <div class="blur-overlay"></div>
-        <div class="row align-items-center">
-          <div class="col">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Mi Cursada</h5>
-                <p class="card-text">Podes ver los datos de las materias que estás cursando actualmente y consultar tu historia académica.</p>
-                <a href="#" class="btn btn-primary">Ver mi cursada</a>
-              </div>
+    <iframe src="headerUsuario.html" class="header"></iframe>
+    <div class="background-image">
+      <img
+        src="img/universidad-img.jpg"
+        class="img-fluid"
+        alt="Universidad Argentina de Desarrollo"
+      />
+      <h1 class="title">Autogestión</h1>
+      <div class="blur-overlay"></div>
+      <div class="row align-items-center">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Mi Cursada</h5>
+              <p class="card-text">
+                Podes ver los datos de las materias que estás cursando
+                actualmente y consultar tu historia académica.
+              </p>
+              <a href="#" class="btn btn-primary">Ver mi cursada</a>
             </div>
           </div>
-          <div class="col">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Inscribirme</h5>
-                <p class="card-text">Se encuentra disponible la oferta de materias para el próximo cuatrimestre según correlatividad.</p>
-                <a href="#" class="btn btn-primary">Ver oferta</a>
-              </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Inscribirme</h5>
+              <p class="card-text">
+                Se encuentra disponible la oferta de materias para el próximo
+                cuatrimestre según correlatividad.
+              </p>
+              <a href="#" class="btn btn-primary">Ver oferta</a>
             </div>
           </div>
-          <div class="col">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Trámites Online</h5>
-                <p class="card-text">Gestioná distintos trámites sin la necesidad de acercarte a la universidad. Tramitá tu boleto estudiantil.</p>
-                <a href="#" class="btn btn-primary">Ver trámites</a>
-              </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Trámites Online</h5>
+              <p class="card-text">
+                Gestioná distintos trámites sin la necesidad de acercarte a la
+                universidad. Tramitá tu boleto estudiantil.
+              </p>
+              <a href="#" class="btn btn-primary">Ver trámites</a>
             </div>
           </div>
         </div>
       </div>
+    </div>
   </body>
 </html>

@@ -1,0 +1,48 @@
+html {
+  overflow-y: hidden;
+}
+
+.background-image {
+  position: relative;
+  height: auto; /* ajusta el alto según sea necesario */
+  overflow: hidden;
+}
+
+.background-image img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.blur-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%; /* ajusta el alto del overlay según sea necesario */
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #393939);
+  filter: blur(5px);
+}
+
+.row {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-bottom: 5%;
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+

@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/InscripcionMaterias.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Font Awesome -->
+    <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script> 
     $(function(){
@@ -11,7 +15,70 @@
     });
     </script> 
 </head>
-<body>
-    <div id="header"></div>
+<body class="fade-in">
+    
+    <iframe src="headerUsuario.html" class="header"></iframe>
+       
+   
+    <main class="d-flex justify-content-center align-items-center min-vh-100">
+        <div class="background-image">
+            <img src="img/universidad-img.jpg" class="img-fluid" alt="Universidad Argentina de Desarrollo"/>
+        </div>
+        <div class="overlay"></div>
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-md-5 subjects d-flex flex-column justify-content-center text-white bg-white p-4">
+                    <h2 class="text-center">Materia 2</h2>
+                    <div class="mb-4">
+                        <select class="custom-select btn-custom">
+                            <option selected>Turno de cursada</option>
+                            <option value="1">Mañana</option>
+                            <option value="2">Tarde</option>
+                            <option value="3">Noche</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <select class="custom-select btn-custom">
+                            <option selected>Comisión</option>
+                            <option value="1">Comisión 1</option>
+                            <option value="2">Comisión 2</option>
+                            <option value="3">Comisión 3</option>
+                        </select>
+                    </div>
+                    <button class="btn-lg btn-black" id="inscribirBtn">
+                        Inscribirme
+                    </button>
+                </div>
+                <div class="col-md-1 d-none d-md-block"></div>
+                <div class="col-md-5 study-plan d-flex flex-column justify-content-center bg-white text-dark text-left p-4">
+                    <h3 class="text-center">Contenidos</h3>
+                    <ul class="list-unstyled">
+                        <li>Introducción a la Programación</li>
+                        <li>HTML y CSS</li>
+                        <li>JavaScript</li>
+                        <li>Desarrollo de Aplicaciones Web</li>
+                        <li>Base de Datos</li>
+                        <li>Frameworks Frontend</li>
+                        <li>Backend con Node.js</li>
+                        <li>Proyecto Final</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+  <script>
+    document.querySelectorAll('.custom-select').forEach(select => {
+        select.addEventListener('change', () => {
+            // Aquí puedes añadir la lógica para manejar el cambio de selección
+        });
+    });
+
+ </script>
+
+
+
+
 </body>
 </html>

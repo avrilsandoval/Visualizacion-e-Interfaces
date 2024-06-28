@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/styles/ofertaDeMaterias.css">
+    <link rel="stylesheet" href="styles/ofertaDeMaterias.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -14,45 +14,50 @@
     });
     </script> 
 </head>
-<body>
-    <div id="header"></div>
-   
-    <main class="d-flex justify-content-center align-items-center bg-dark min-vh-100">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-5 subjects d-flex flex-column justify-content-center text-white">
-                  <h2 class="text-center">Oferta de materias</h2>
-                  <button class="btn btn-secondary btn-lg mb-4 d-flex justify-content-between align-items-center transition-button">
-                    <span>Materia 1</span>
-                    <span><i class="fas fa-chevron-right"></i></span>
-                </button>
-                <button class="btn btn-secondary btn-lg mb-4 d-flex justify-content-between align-items-center transition-button">
-                    <span>Materia 2</span>
-                    <span><i class="fas fa-chevron-right"></i></span>
-                </button>
-                <button class="btn btn-secondary btn-lg mb-4 d-flex justify-content-between align-items-center transition-button">
-                    <span>Materia 3</span>
-                    <span><i class="fas fa-chevron-right"></i></span>
-                </button>
-              </div>
-              <div class="col-md-2 d-none d-md-block"></div>
-              <div class="col-md-5 study-plan d-flex flex-column justify-content-center bg-light text-dark text-left p-4">
-                  <h3 class="text-center">Plan de estudio</h3>
-                  <h2 class="text-left">Tecnicatura en Desarrollo Web</h2>
-                  <ul class="list-unstyled">
-                      <li>Introducción a la Programación</li>
-                      <li>HTML y CSS</li>
-                      <li>JavaScript</li>
-                      <li>Desarrollo de Aplicaciones Web</li>
-                      <li>Base de Datos</li>
-                      <li>Frameworks Frontend</li>
-                      <li>Backend con Node.js</li>
-                      <li>Proyecto Final</li>
-                  </ul>
-              </div>
-          </div>
-      </div>
-  </main>
+<body class="fade-in">
+    
+    <iframe src="headerUsuario.html" class="header"></iframe>
+    
+    <main class="d-flex justify-content-center align-items-center min-vh-100 position-relative">
+        <div class="background-image">
+            <img src="img/universidad-img.jpg" class="img-fluid" alt="Universidad Argentina de Desarrollo"/>
+        </div>
+        <div class="overlay"></div>
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-md-5 subjects d-flex flex-column justify-content-center bg-white p-4 text-dark">
+                    <h2 class="text-center">Oferta de materias</h2>
+                    <button class="btn-custom btn-lg mb-4 d-flex justify-content-between align-items-center transition-button">
+                        <span>Materia 1</span>
+                        <span><i class="fas fa-chevron-right"></i></span>
+                    </button>
+                    <button class="btn-custom btn-lg mb-4 d-flex justify-content-between align-items-center transition-button">
+                        <span>Materia 2</span>
+                        <span><i class="fas fa-chevron-right"></i></span>
+                    </button>
+                    <button class="btn-custom btn-lg mb-4 d-flex justify-content-between align-items-center transition-button">
+                        <span>Materia 3</span>
+                        <span><i class="fas fa-chevron-right"></i></span>
+                    </button>
+                </div>
+                <div class="col-md-1 d-none d-md-block"></div>
+                <div class="col-md-5 study-plan d-flex flex-column justify-content-center bg-white text-dark text-left p-4">
+                    <h3 class="text-center">Plan de estudio</h3>
+                    <h2 class="text-left">Tecnicatura en Desarrollo Web</h2>
+                    <ul class="list-unstyled">
+                        <li>Introducción a la Programación</li>
+                        <li>HTML y CSS</li>
+                        <li>JavaScript</li>
+                        <li>Desarrollo de Aplicaciones Web</li>
+                        <li>Base de Datos</li>
+                        <li>Frameworks Frontend</li>
+                        <li>Backend con Node.js</li>
+                        <li>Proyecto Final</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
        
     </body>
     </html>

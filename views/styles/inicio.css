@@ -6,7 +6,9 @@ body {
     font-family: "Poppins", sans-serif !important;
 }
 
-
+.mt-4 {
+    margin-top: 1.2rem !important;
+}
 
 .form-container {
     background-color: #401115;

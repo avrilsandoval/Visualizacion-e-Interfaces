@@ -2,46 +2,55 @@ html {
   overflow-y: hidden;
 }
 
-.background-image {
-  position: relative;
-  height: auto; /* ajusta el alto según sea necesario */
-  overflow: hidden;
+body{
+  background-color: #1b1b1a;
 }
 
 .background-image img {
+  position: absolute;
   width: 100%;
   height: 50%;
   object-fit: cover;
+  overflow: hidden;
 }
 
 .title {
+  color: white;
   position: absolute;
-  top: 40%;
+  top: 54%;
   left: 8%;
-  width: 100%;
 }
 
-.blur-overlay {
+/* .blur-overlay {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 60%; /* ajusta el alto del overlay según sea necesario */
+  height: 60%; 
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #393939);
+  filter: blur(5px);
+} */
+
+.blur-overlay {
+  position: absolute;
+  bottom: 184px;
+  left: -1px;
+  width: 100%;
+  height: 44%;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #1b1b1b);
   filter: blur(5px);
 }
 
 .row {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  margin-bottom: 5%;
+  bottom: 10%;
+  left: 10%;
+  width: 80%;
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-top: calc(-1* var(--bs-gutter-y));
   margin-right: 0 !important;
   margin-left: 0 !important;
 }
@@ -52,16 +61,20 @@ html {
   fill: #401115;
 }
 
-.arrow{
+.arrow {
   position: absolute;
   right: 1rem;
 }
 
-.card-title{
+.card-title {
   font-family: "Noto Serif Display", serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
+}
+
+.card{
+  --bs-card-height: 10rem !important;
+
 }

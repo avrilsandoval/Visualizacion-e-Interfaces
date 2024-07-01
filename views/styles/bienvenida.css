@@ -5,18 +5,19 @@ html, body {
     overflow: hidden;
 }
 
-
-
-.bg-img-1 {
-    background-image: url('/views/img/universidad-img.jpg');
+.options-nav{
+    background-color:#401115;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
-.bg-img-2 {
-    background-image: url('/views/img/universidad2.jpg');
+.nav-tabs{
+    border-bottom: #701122 !important;
 }
 
-.bg-img-3 {
-    background-image: url('/views/img/universidad3.jpg');
+.nav-link.active{
+    background-color: #701122 !important;
+    border-color: #701122 !important;
 }
 
 .carousel-image {
@@ -27,6 +28,10 @@ html, body {
     background-attachment: fixed;
 }
 
+.w-100 {
+    width: 100% !important;
+    height: auto !important;
+}
 
 .carousel-indicators li {
     margin-left: 2em;
@@ -42,13 +47,12 @@ html, body {
     background-color: rgb(99, 99, 99);
 }
 
-
-
 .card {
     z-index: 1;
     background: #401115c7 !important; 
     color: rgb(255, 255, 255) !important;
     font-family: "Poppins", sans-serif !important;
+    margin-top: 5rem;
 }
 
 .card h4{

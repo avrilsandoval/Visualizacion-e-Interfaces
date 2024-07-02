@@ -6,6 +6,26 @@ body {
   overflow: hidden;
 }
 
+
+.bg-img-1 {
+  background-image: url('/views/img/universidad-img.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-img-2 {
+  background-image: url('/views/img/universidad2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-img-3 {
+  background-image: url('/views/img/universidad3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
 .options-nav {
   background-color: #401115;
   padding-left: 1rem;
@@ -82,4 +102,42 @@ body {
   background-color: #972133 !important;
   border: 0px;
   width: 8em;
+}
+
+@media (max-width: 768px) {
+  .navbar{
+    padding: 0px !important;
+  }
+
+  .navbar-brand{
+    width: 6em;
+    padding: 0px;
+  }
+  .navbar-brand img{
+    width: 75%;
+    margin-left: 0px !important;
+  }
+
+  .botonheader {
+    margin-left: auto;
+  }
+
+  .options-nav{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .botoninscribir{
+    width: 10rem !important; 
+  }
+}
+
+@media (max-width: 500px) {
+ 
+ .nav-link{
+  padding-right: 1.3em;
+  padding-left: 0.5em;
+}
+
+
 }

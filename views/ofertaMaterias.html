@@ -1,97 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles/ofertaDeMaterias.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/header.css">
-    </head>
-<body class="fade-in">
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="home.html" id="brand">
-          <img src="img/UAD-logo-img.png" alt="UAD" class="d-inline-block align-text-top" />
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Mi Cursada</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="#"></a>
-            </li>
-          </ul>
-          <a class="user-info" href="#">
-            Luka Maciel
-            <img src="img/perfil-img.jpg" alt="Foto de perfil">
+    <link rel="stylesheet" href="styles/ofertaDeMaterias.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="styles/header.css" />
+  </head>
+  <body class="fade-in">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html" id="brand">
+            <img
+              src="img/UAD-logo-img.png"
+              alt="UAD"
+              class="d-inline-block align-text-top"
+            />
           </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mi Cursada</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#"></a>
+              </li>
+            </ul>
+            <a class="user-info" href="#">
+              Luka Maciel
+              <img src="img/perfil-img.jpg" alt="Foto de perfil" />
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main
+      class="d-flex justify-content-center align-items-center min-vh-100 position-relative"
+    >
+      <div class="background-image">
+        <img
+          src="img/universidad-img.jpg"
+          class="img-fluid"
+          alt="Universidad Argentina de Desarrollo"
+        />
+      </div>
+      <div class="overlay"></div>
+      <div class="container position-relative">
+        <div class="row">
+          <div
+            class="col-md-5 subjects d-flex flex-column justify-content-center bg-white p-4 text-dark"
+          >
+            <h2 class="text-center">Oferta de materias</h2>
+            <button
+              class="btn-custom btn-lg mb-4 d-flex justify-content-between align-items-center transition-button"
+            >
+              <span>Materia 1</span>
+              <span><i class="fas fa-chevron-right"></i></span>
+            </button>
+            <button
+              class="btn-custom btn-lg mb-4 d-flex justify-content-between align-items-center transition-button"
+            >
+              <span>Materia 2</span>
+              <span><i class="fas fa-chevron-right"></i></span>
+            </button>
+            <button
+              class="btn-custom btn-lg mb-4 d-flex justify-content-between align-items-center transition-button"
+            >
+              <span>Materia 3</span>
+              <span><i class="fas fa-chevron-right"></i></span>
+            </button>
+          </div>
+          <div class="col-md-1 d-none d-md-block"></div>
+          <div
+            class="col-md-5 study-plan d-flex flex-column justify-content-center bg-white text-dark text-left p-4"
+            style="width: 35rem"
+          >
+            <h3 class="text-center">Plan de estudio</h3>
+            <h2 class="text-left">Tecnicatura en Desarrollo Web</h2>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#panelsStayOpen-collapseOne"
+                    aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne"
+                  >
+                    Primer año
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseOne"
+                  class="accordion-collapse collapse show"
+                >
+                  <div class="accordion-body">
+                    <strong>Cuatrimestre 1:</strong>
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th scope="col">Código</th>
+                          <th scope="col">Asignatura</th>
+                          <th scope="col">Correlatividad</th>
+                          <th scope="col">Horas semanales</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">2619</th>
+                          <td>Programación Básica I</td>
+                          <td>-</td>
+                          <td>8</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2620</th>
+                          <td>Informática General</td>
+                          <td>-</td>
+                          <td>4</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2621</th>
+                          <td>Matemática General</td>
+                          <td>-</td>
+                          <td>8</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2622</th>
+                          <td>Inglés Técnico I</td>
+                          <td>-</td>
+                          <td>4</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <strong>Cuatrimestre 2:</strong>
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th scope="col">Código</th>
+                          <th scope="col">Asignatura</th>
+                          <th scope="col">Correlatividad</th>
+                          <th scope="col">Horas semanales</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">2623</th>
+                          <td>Programación Básica II</td>
+                          <td>2619</td>
+                          <td>4</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2624</th>
+                          <td>Programación Web I</td>
+                          <td>2619/2620</td>
+                          <td>4</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2625</th>
+                          <td>Base de Datos I</td>
+                          <td>2619/2620/2621</td>
+                          <td>8</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2626</th>
+                          <td>Intro. Diseño Gráfico Web</td>
+                          <td>2620</td>
+                          <td>4</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2627</th>
+                          <td>Inglés Técnico II</td>
+                          <td>2622</td>
+                          <td>4</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#panelsStayOpen-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo"
+                  >
+                    Segundo año
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseTwo"
+                  class="accordion-collapse collapse"
+                >
+                  <div class="accordion-body">
+                    <strong>Catrimestre 1:</strong>
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th scope="col">Código</th>
+                          <th scope="col">Asignatura</th>
+                          <th scope="col">Correlatividad</th>
+                          <th scope="col">Horas semanales</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">2628</th>
+                          <td>Programación Web II</td>
+                          <td>2623/2624/2625</td>
+                          <td>8</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2629</th>
+                          <td>Diseño de Aplicaciones Web</td>
+                          <td>2623/2624/2625</td>
+                          <td>8</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2630</th>
+                          <td>Visualización e Interfaces</td>
+                          <td>2624/2626</td>
+                          <td>4</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2631</th>
+                          <td>Taller Web I</td>
+                          <td>2623/2624/2625</td>
+                          <td>4</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <strong>Cuatrimestre 2:</strong>
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th scope="col">Código</th>
+                          <th scope="col">Asignatura</th>
+                          <th scope="col">Correlatividad</th>
+                          <th scope="col">Horas semanales</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">2632</th>
+                          <td>Base de Datos II</td>
+                          <td>2625/2629</td>
+                          <td>4</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2633</th>
+                          <td>Programación Web II</td>
+                          <td>2628/2629/2630</td>
+                          <td>8</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2634</th>
+                          <td>Tecnología de Redes</td>
+                          <td>2630</td>
+                          <td>4</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2635</th>
+                          <td>Taller Web II</td>
+                          <td>2631</td>
+                          <td>4</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2636</th>
+                          <td>Seguridad y Calidad en Aplicaciones Web</td>
+                          <td>2628/2629</td>
+                          <td>4</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#panelsStayOpen-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree"
+                  >
+                    Tercer año
+                  </button>
+                </h2>
+                <div
+                  id="panelsStayOpen-collapseThree"
+                  class="accordion-collapse collapse"
+                >
+                  <div class="accordion-body">
+                    <strong>Catrimestre 1:</strong>
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th scope="col">Código</th>
+                          <th scope="col">Asignatura</th>
+                          <th scope="col">Correlatividad</th>
+                          <th scope="col">Horas semanales</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">2637</th>
+                          <td>Introducción a la Administración de Proyectos</td>
+                          <td>2632/2633/2634</td>
+                          <td>4</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2638</th>
+                          <td>Taller Práctico Integrador</td>
+                          <td>2632/2633/2634/2635/2636</td>
+                          <td>8</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
-  </header>
-    
-    <main class="d-flex justify-content-center align-items-center min-vh-100 position-relative">
-        <div class="background-image">
-            <img src="img/universidad-img.jpg" class="img-fluid" alt="Universidad Argentina de Desarrollo"/>
-        </div>
-        <div class="overlay"></div>
-        <div class="container position-relative">
-            <div class="row">
-                <div class="col-md-5 subjects d-flex flex-column justify-content-center bg-white p-4 text-dark">
-                    <h2 class="text-center">Oferta de materias</h2>
-                    <button class="btn-custom btn-lg mb-4 d-flex justify-content-between align-items-center transition-button">
-                        <span>Materia 1</span>
-                        <span><i class="fas fa-chevron-right"></i></span>
-                    </button>
-                    <button class="btn-custom btn-lg mb-4 d-flex justify-content-between align-items-center transition-button">
-                        <span>Materia 2</span>
-                        <span><i class="fas fa-chevron-right"></i></span>
-                    </button>
-                    <button class="btn-custom btn-lg mb-4 d-flex justify-content-between align-items-center transition-button">
-                        <span>Materia 3</span>
-                        <span><i class="fas fa-chevron-right"></i></span>
-                    </button>
-                </div>
-                <div class="col-md-1 d-none d-md-block"></div>
-                <div class="col-md-5 study-plan d-flex flex-column justify-content-center bg-white text-dark text-left p-4">
-                    <h3 class="text-center">Plan de estudio</h3>
-                    <h2 class="text-left">Tecnicatura en Desarrollo Web</h2>
-                    <ul class="list-unstyled">
-                        <li>Introducción a la Programación</li>
-                        <li>HTML y CSS</li>
-                        <li>JavaScript</li>
-                        <li>Desarrollo de Aplicaciones Web</li>
-                        <li>Base de Datos</li>
-                        <li>Frameworks Frontend</li>
-                        <li>Backend con Node.js</li>
-                        <li>Proyecto Final</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
     </main>
-       
-    </body>
-    </html>
-    
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
     <script>
-      document.querySelectorAll('.transition-button').forEach(button => {
-          button.addEventListener('click', () => {
-              document.body.classList.add('fade-out');
-              setTimeout(() => {
-                  window.location.href = 'inscripcionMateria.html';
-              }, 500);
-          });
+      document.querySelectorAll(".transition-button").forEach((button) => {
+        button.addEventListener("click", () => {
+          document.body.classList.add("fade-out");
+          setTimeout(() => {
+            window.location.href = "inscripcionMateria.html";
+          }, 500);
+        });
       });
-  </script>
+    </script>
+  </body>
+</html>

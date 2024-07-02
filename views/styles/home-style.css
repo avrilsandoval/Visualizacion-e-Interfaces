@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&display=swap');
+
 html {
   overflow-y: hidden;
 }
@@ -15,15 +17,13 @@ body{
 }
 
 .title {
-  font-family: "Noto Serif Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
+  font-family: "Libre Caslon Text", serif;
+  font-weight: 400;
   font-style: normal;
-  font-variation-settings: "wdth" 100;
   color: white;
   position: absolute;
   top: 54%;
-  left: 8%;
+  left: 11%;
 }
 
 /* .blur-overlay {
@@ -72,11 +72,9 @@ body{
 }
 
 .card-title {
-  font-family: "Noto Serif Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
+  font-family: "Libre Caslon Text", serif;
+  font-weight: 600;
   font-style: normal;
-  font-variation-settings: "wdth" 100;
 }
 
 .card{

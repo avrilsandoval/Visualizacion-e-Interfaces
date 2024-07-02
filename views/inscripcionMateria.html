@@ -1,89 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles/InscripcionMaterias.css">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Font Awesome -->
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/InscripcionMaterias.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/header.css" />
     <script src="js/inscripcion-select.js"></script>
-</head>
-<body class="fade-in">
+  </head>
+  <body class="fade-in">
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="home.html" id="brand">
-              <img src="img/UAD-logo-img.png" alt="UAD" class="d-inline-block align-text-top" />
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html" id="brand">
+            <img
+              src="img/UAD-logo-img.png"
+              alt="UAD"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mi Cursada</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#"></a>
+              </li>
+            </ul>
+            <a class="user-info" href="#">
+              Luka Maciel
+              <img src="img/perfil-img.jpg" alt="Foto de perfil" />
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Mi Cursada</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link" href="#"></a>
-                </li>
-              </ul>
-              <a class="user-info" href="#">
-                Luka Maciel
-                <img src="img/perfil-img.jpg" alt="Foto de perfil">
-              </a>
-            </div>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
+    </header>
     <main class="d-flex justify-content-center align-items-center min-vh-100">
-        <div class="background-image">
-            <img src="img/universidad-img.jpg" class="img-fluid" alt="Universidad Argentina de Desarrollo"/>
-        </div>
-        <div class="overlay"></div>
-        <div class="container position-relative">
-            <div class="row">
-                <div class="col-md-5 subjects d-flex flex-column justify-content-center text-white bg-white p-4">
-                    <h2 class="text-center">Materia 2</h2>
-                    <div class="mb-4">
-                        <select class="custom-select btn-custom" id="select-1">
-                            <option selected>Turno de cursada</option>
-                            <option value="maniana">Mañana</option>
-                            <option value="tarde">Tarde</option>
-                            <option value="noche">Noche</option>
-                        </select>
-                    </div>
-                    <div class="mb-4">
-                        <select class="custom-select btn-custom" id="select-2">
-
-                        </select>
-                    </div>
-                    <button class="btn-lg btn-black" id="inscribirBtn">
-                        Inscribirme
-                    </button>
-                </div>
-                <div class="col-md-1 d-none d-md-block"></div>
-                <div class="col-md-5 study-plan d-flex flex-column justify-content-center bg-white text-dark text-left p-4">
-                    <h3 class="text-center">Contenidos</h3>
-                    <ul class="list-unstyled">
-                        <li>Introducción a la Programación</li>
-                        <li>HTML y CSS</li>
-                        <li>JavaScript</li>
-                        <li>Desarrollo de Aplicaciones Web</li>
-                        <li>Base de Datos</li>
-                        <li>Frameworks Frontend</li>
-                        <li>Backend con Node.js</li>
-                        <li>Proyecto Final</li>
-                    </ul>
-                </div>
+      <div class="background-image">
+        <img
+          src="img/universidad-img.jpg"
+          class="img-fluid"
+          alt="Universidad Argentina de Desarrollo"
+        />
+      </div>
+      <div class="overlay"></div>
+      <div class="container position-relative">
+        <div class="row">
+          <div
+            class="col-md-5 subjects d-flex flex-column justify-content-center text-white bg-white p-4"
+          >
+            <h2 class="text-center">Materia 2</h2>
+            <div class="mb-4">
+              <select class="custom-select btn-custom" id="select-1">
+                <option selected>Turno de cursada</option>
+                <option value="maniana">Mañana</option>
+                <option value="tarde">Tarde</option>
+                <option value="noche">Noche</option>
+              </select>
             </div>
+            <div class="mb-4">
+              <select class="custom-select btn-custom" id="select-2"></select>
+            </div>
+            <a href="verificacionMaterias.html">
+              <button class="btn-lg btn-black" id="inscribirBtn">
+                Inscribirme
+              </button>
+            </a>
+          </div>
+          <div class="col-md-1 d-none d-md-block"></div>
+          <div
+            class="col-md-5 study-plan d-flex flex-column justify-content-center bg-white text-dark text-left p-4"
+          >
+            <h3 class="text-center">Contenidos</h3>
+            <ul class="list-unstyled">
+              <li>Introducción a la Programación</li>
+              <li>HTML y CSS</li>
+              <li>JavaScript</li>
+              <li>Desarrollo de Aplicaciones Web</li>
+              <li>Base de Datos</li>
+              <li>Frameworks Frontend</li>
+              <li>Backend con Node.js</li>
+              <li>Proyecto Final</li>
+            </ul>
+          </div>
         </div>
+      </div>
     </main>
-
-</body>
+    <!--OPCION DE BOOTSTRAP PARA AGREGAR EL CONTENIDO DE LA MATERIA SELECCIONADA
+ https://getbootstrap.com/docs/5.3/components/scrollspy/ -->
+  </body>
 </html>

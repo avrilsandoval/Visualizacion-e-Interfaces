@@ -1,0 +1,19 @@
+body{
+    background-color: white !important;
+}
+
+.div-superior{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    margin-top: 4rem;
+}
+
+.busqueda-boton{
+    display: flex;
+    justify-content: space-between;
+}
+
+.grilla-materias{
+    margin: 2rem;
+}

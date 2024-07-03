@@ -37,6 +37,7 @@
     animation: slide-out 0.5s forwards;
 }
 
+
 @keyframes slide-in {
     from {
         transform: translateX(100%);

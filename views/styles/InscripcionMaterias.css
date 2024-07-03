@@ -1,149 +1,168 @@
 body {
-    font-family: "Poppins", sans-serif !important;
-    font-weight: 300 !important;
-    font-style: normal !important;
-      overflow-x: hidden; /* Para evitar scroll horizontal durante la transición */
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 300 !important;
+  font-style: normal !important;
+  overflow-x: hidden; /* Para evitar scroll horizontal durante la transición */
 }
 
 .fade-in {
-    animation: slide-in 0.5s forwards;
+  animation: slide-in 0.5s forwards;
 }
 
 .slide-out {
-    animation: slide-out 0.5s forwards;
+  animation: slide-out 0.5s forwards;
 }
 
 @keyframes slide-in {
-    from {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @keyframes slide-out {
-    from {
-        transform: translateX(0);
-        opacity: 1;
-    }
-    to {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
 }
 
+.scrollspy-example {
+  height: 300px;
+  overflow-y: auto;
+}
 
+.btn-secondary {
+  height: 3rem;
+  width: 3rem;
+}
+
+.plan-descarga {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
 
 .background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
 .background-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.5; /* Ajusta la opacidad de la imagen de fondo */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5; /* Ajusta la opacidad de la imagen de fondo */
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente negro */
-    z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente negro */
+  z-index: 1;
 }
 
 main {
-    position: relative;
-    min-height: calc(100vh - 56px); /* Ajusta la altura restando la altura del header */
+  position: relative;
+  min-height: calc(
+    100vh - 56px
+  ); /* Ajusta la altura restando la altura del header */
 }
 
-.subjects, .study-plan {
-
-    z-index: 3;
-    padding: 2rem;
-    border-radius: 10px;
-    background-color: #ffffff; /* Fondo blanco */
+.subjects,
+.study-plan {
+  z-index: 3;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #ffffff; /* Fondo blanco */
 }
 
-.custom-select,.btn-custom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #401115; /* Cambia el fondo al color solicitado */
-    border: none;
-    color: white;
-    padding: 0.75rem 1rem;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    width: 100%;
-    transition: background-color 0.3s ease;
+.custom-select,
+.btn-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #401115; /* Cambia el fondo al color solicitado */
+  border: none;
+  color: white;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  width: 100%;
+  transition: background-color 0.3s ease;
 }
 
-.custom-select:hover, .btn-black:hover, .btn-custom:hover {
-    background-color:white; /* Un tono más oscuro para el hover */
+.custom-select:hover,
+.btn-black:hover,
+.btn-custom:hover {
+  background-color: white; /* Un tono más oscuro para el hover */
 }
 
-.custom-select:focus, .btn-black:focus, .btn-custom:focus {
-    box-shadow: none;
-    outline: none;
+.custom-select:focus,
+.btn-black:focus,
+.btn-custom:focus {
+  box-shadow: none;
+  outline: none;
 }
 
 .btn-black {
-    background-color: #000000;
-    color: white;
+  background-color: #000000;
+  color: white;
 }
 
 .btn-black:hover {
-    background-color: #333333;
+  background-color: #333333;
 }
 
 .progress.stepper {
-    display: flex;
-    overflow: visible;
-  }
-  .progress-bar.step {
-    position: relative;
-    text-align: center;
-    padding: 10px 0;
-    font-weight: bold;
-    color: white;
-    
-  }
-  .progress-bar.step::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 100%;
-    width: 0;
-    height: 0;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-    border-left: 10px solid white;
-    
-  }
-  .progress-bar.step.active::before {
-    border-left-color: inherit;
-    
-  }
+  display: flex;
+  overflow: visible;
+}
+.progress-bar.step {
+  position: relative;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+  color: white;
+}
+.progress-bar.step::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 10px solid white;
+}
+.progress-bar.step.active::before {
+  border-left-color: inherit;
+}
 
 @media (max-width: 768px) {
-    .subjects, .study-plan {
-        min-height: auto;
-        margin: 1rem;
-       
-    }
-    .col-md-1 {
-        display: none;
-    }
+  .subjects,
+  .study-plan {
+    min-height: auto;
+    margin: 1rem;
+  }
+  .col-md-1 {
+    display: none;
+  }
 }

@@ -35,12 +35,7 @@ body {
     }
 }
 
-.header {
-    position: relative;
-    z-index: 2; /* Asegura que el header esté siempre encima de otros elementos */
-    background-color: #f5f5f5;
-    width: 100%;
-}
+
 
 .background-image {
     position: absolute;
@@ -112,6 +107,35 @@ main {
 .btn-black:hover {
     background-color: #333333;
 }
+
+.progress.stepper {
+    display: flex;
+    overflow: visible;
+  }
+  .progress-bar.step {
+    position: relative;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+    color: white;
+    
+  }
+  .progress-bar.step::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 10px solid white;
+    
+  }
+  .progress-bar.step.active::before {
+    border-left-color: inherit;
+    
+  }
 
 @media (max-width: 768px) {
     .subjects, .study-plan {

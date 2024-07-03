@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles/ofertaDeMaterias.css" />
+    <link rel="stylesheet" href="styles/header.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -17,7 +18,7 @@
     <link rel="stylesheet" href="styles/header.css" />
   </head>
   <body class="fade-in">
-    <header>
+   <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="home.html" id="brand">
@@ -72,32 +73,52 @@
       <div class="overlay"></div>
       <div class="container position-relative">
         <div class="row">
+
+
           <div
-            class="col-md-5 subjects d-flex flex-column justify-content-center bg-white p-4 text-dark"
+            class="col-md-5 subjects d-flex flex-column justify-content-start bg-white p-4 text-dark m-3"
+            style="width: 35rem; height: max-content;"
           >
+            
+      
+   
+            <div class="progress stepper mb-4">
+              <div class="progress-bar step" style="width: 50%; background-color: #972133;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Paso 1</div>
+              <div class="progress-bar step" style="width: 50%; background-color: #330d0d;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Paso 2</div>
+            </div>
+            
             <h2 class="text-center">Oferta de materias</h2>
+
             <button
               class="btn-custom btn-lg mb-4 d-flex justify-content-between align-items-center transition-button"
             >
-              <span>Materia 1</span>
+              <span>taller web 1</span>
               <span><i class="fas fa-chevron-right"></i></span>
             </button>
             <button
               class="btn-custom btn-lg mb-4 d-flex justify-content-between align-items-center transition-button"
             >
-              <span>Materia 2</span>
+              <span>Base de Datos 2</span>
               <span><i class="fas fa-chevron-right"></i></span>
             </button>
             <button
               class="btn-custom btn-lg mb-4 d-flex justify-content-between align-items-center transition-button"
             >
-              <span>Materia 3</span>
+              <span>Programacion web 3</span>
               <span><i class="fas fa-chevron-right"></i></span>
             </button>
+            <button
+            class="btn-custom btn-lg mb-4 d-flex justify-content-between align-items-center transition-button"
+          >
+            <span>Visualizacion e Interfaces</span>
+            <span><i class="fas fa-chevron-right"></i></span>
+          </button>
           </div>
+
+
           <div class="col-md-1 d-none d-md-block"></div>
           <div
-            class="col-md-5 study-plan d-flex flex-column justify-content-center bg-white text-dark text-left p-4"
+            class="col-md-5 study-plan d-flex flex-column justify-content-center bg-white text-dark text-left p-4 m-3"
             style="width: 35rem"
           >
             <h3 class="text-center">Plan de estudio</h3>
@@ -362,7 +383,8 @@
                         <tr>
                           <th scope="row">2638</th>
                           <td>Taller Práctico Integrador</td>
-                          <td>2632/2633/2634/2635/2636</td>
+                          <td>2632/2633/2634/
+                            2635/2636</td>
                           <td>8</td>
                         </tr>
                       </tbody>

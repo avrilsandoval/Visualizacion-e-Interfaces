@@ -89,10 +89,12 @@
 
 main {
     position: relative;
+    
     min-height: calc(100vh - 56px); /* Ajusta la altura restando la altura del header */
 }
 
 .subjects, .study-plan {
+    
     z-index: 2;
     padding: 2rem;
     border-radius: 10px;
@@ -123,13 +125,32 @@ main {
     outline: none;
 }
 
-@media (max-width: 768px) {
-    .subjects, .study-plan {
-        min-height: auto;
-        margin: 1rem;
-        
-    }
-    .col-md-1 {
-        display: none;
-    }
-}
+.progress.stepper {
+    display: flex;
+    overflow: visible;
+  }
+  .progress-bar.step {
+    position: relative;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+    color: white;
+    
+  }
+  .progress-bar.step::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 10px solid white;
+    
+  }
+  .progress-bar.step.active::before {
+    border-left-color: inherit;
+    
+  }
+ 

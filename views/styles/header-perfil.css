@@ -1,0 +1,38 @@
+header {
+  background-color: #401115;
+}
+
+.navbar-carrera {
+  font-family: "Libre Caslon Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  margin: 1rem;
+}
+
+.divider {
+  background-color: beige !important;
+  height: 0.04rem;
+  margin: 1rem;
+}
+
+@media (max-width: 768px) {
+  .navbar-carrera {
+    font-size: 1rem;
+  }
+
+  .navbar-toggler {
+    text-decoration: none;
+    border-color: white !important;
+    height: 2em;
+    width: 2em;
+  }
+
+  .bi-list {
+    color: white !important;
+    width: 1.5em;
+    height: 1.5em;
+  }
+}

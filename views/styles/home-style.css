@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&display=swap");
 
 html {
   overflow-y: hidden;
 }
 
-body{
+body {
   background-color: #1b1b1a;
 }
 
@@ -22,13 +22,13 @@ body{
   font-style: normal;
   color: white;
   position: absolute;
-  top: 54%;
+  top: 62%;
   left: 11%;
 }
 
 .blur-overlay {
   position: absolute;
-  bottom: 10%;
+  bottom: 15%;
   left: 0%;
   width: 100%;
   height: 44%;
@@ -38,21 +38,19 @@ body{
 
 .row {
   position: absolute;
-  bottom: 10%;
+  bottom: 4%;
   left: 10%;
   width: 80%;
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(-1* var(--bs-gutter-y));
+  margin-top: calc(-1 * var(--bs-gutter-y));
   margin-right: 0 !important;
   margin-left: 0 !important;
 }
 
-header{
-background-color: #401115;
-}
+
 
 .bi {
   height: 2rem;
@@ -63,6 +61,7 @@ background-color: #401115;
 .arrow {
   position: absolute;
   right: 1rem;
+  bottom: 1rem;
 }
 
 .card-title {
@@ -71,27 +70,63 @@ background-color: #401115;
   font-style: normal;
 }
 
-.card{
+.card {
   --bs-card-height: 10rem !important;
-
 }
 
-.container-fluid{
+.container-fluid {
   background-color: #401115;
 }
 
-.navbar-carrera{
-  font-family: "Libre Caslon Text", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: white;
-  margin: 1rem;
-}
 
-.divider {
-  background-color: beige !important;
-  height: 0.04rem;
-  margin: 1rem;
+
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+    bottom: 12%;
+    left: 5%;
+    width: 90%;
+  }
+
+  .arrow {
+    font-size: 1.2rem;
+    bottom: 5px;
+    right: 5px;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .background-image img {
+    height: auto;
+  }
+
+  .blur-overlay {
+    bottom: 54%;
+  }
+
+  .title {
+    top: 42%;
+  }
+
+  .navbar-carrera {
+    font-size: 1rem;
+  }
+
+  .navbar-toggler {
+    text-decoration: none;
+    border-color: white !important;
+    height: 2em;
+    width: 2em;
+  }
+
+  .bi-list {
+    color: white !important;
+    width: 1.5em;
+    height: 1.5em;
+  }
 }

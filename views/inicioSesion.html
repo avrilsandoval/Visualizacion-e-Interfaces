@@ -8,18 +8,46 @@
       <link href="styles/header.css" rel="stylesheet">
       <link rel="icon" href="img/logo.png" type="image/png">
       <title>Iniciar Sesión</title>
+      <script type="text/javascript" src="js/formularios.js"></script>
 
 </head>
 <body style="background-color: rgba(0, 0, 0, 0.5);">
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
-            <a class="navbar-brand" href="bienvenida.html" id="brand">
-              <img src="img/UAD-logo-img.png" alt="UNAD" class="d-inline-block align-text-top" />
-            </a>
-            </div>
+            <a class="navbar-brand" href="#" id="brand">
+              <img src="img/UAD-logo-img.png" alt="UAD" class="d-inline-block align-text-top" />
+            </a>   
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#optionsNav" aria-controls="optionsNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+              <a href="inicioSesion.html" class="btn btn-primary botonheader">Ingresar</a>
+          </div>
         </nav>
-    </header>
+
+
+        
+     <nav class="navbar navbar-expand-lg bg-body-tertiary mt-0 options-nav">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="optionsNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Carreras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Historia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      </header>
     
     <div class="container">
         <div class="row justify-content-center">
@@ -60,14 +88,14 @@
                 
 
 
-                <form>
+                <form class="form-login" action="./home.html" method="get" id="form" name="form">
                     <div class="w-75 mx-auto col-md-6 mb-3">
-                        <input type="email" class="form-control" id="email" placeholder="Correo electrónico" required>
+                        <input type="email" class="form-control" id="email" placeholder="Correo electrónico" required name="email">
                     </div>
 
                     
                     <div class="w-75 mx-auto col-md-6 mb-3">
-                        <input type="password" class="form-control" id="password" placeholder="Contraseña" required>
+                        <input type="password" class="form-control" id="password" placeholder="Contraseña" required name="password">
                     </div>
 
                 
@@ -77,9 +105,9 @@
                 <div class="border-top my-3 w-25 mx-auto"></div>
                 <div class="row justify-content-center mt-4">
                     
-                    <button type="button" class="btn-primary w-50 botonform">
+                    <button type="button" class="btn-primary w-50 botonform" id="Enviar" value="Iniciar sesión" onclick="validar_envio()">
 
-                        <a href="home.html">Inicia sesión</a>
+                        Inicia sesión
 
                     </button>
                
@@ -92,6 +120,8 @@
             </div>
             </div>
         </div>
-       
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+        
 </body>
 </html>

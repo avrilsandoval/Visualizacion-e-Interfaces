@@ -15,7 +15,6 @@ header {
 .divider {
   background-color: beige !important;
   height: 0.04rem;
-  margin: 1rem;
 }
 
 @media (max-width: 768px) {

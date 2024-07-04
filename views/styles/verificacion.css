@@ -49,6 +49,14 @@ body {
   background-color: #292929;
 }
 
+.search-button svg {
+  display: none;
+}
+
+.search-button + span {
+  display: inline-block;
+}
+
 @media (max-width: 768px) {
   .grilla-materias {
     overflow-x: auto;
@@ -67,5 +75,17 @@ body {
   .d-flex {
     display: flex !important;
     margin-right: 1rem;
-}
+  }
+
+  .search-button svg {
+    display: inline-block;
+  }
+
+  .btn-primary span {
+    display: none !important;
+  }
+
+  .btn-primary svg {
+    display: inline-block;
+  }
 }

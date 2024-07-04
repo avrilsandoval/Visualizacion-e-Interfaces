@@ -6,25 +6,23 @@ body {
   overflow: hidden;
 }
 
-
 .bg-img-1 {
-  background-image: url('../img/universidad-img.jpg');
+  background-image: url("../img/universidad-img.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .bg-img-2 {
-  background-image: url('../img/universidad2.jpg');
+  background-image: url("../img/universidad2.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .bg-img-3 {
-  background-image: url('../img/universidad3.jpg');
+  background-image: url("../img/universidad3.jpg");
   background-size: cover;
   background-position: center;
 }
-
 
 .options-nav {
   background-color: #401115;
@@ -40,10 +38,9 @@ body {
   border-color: #701122 !important;
 }
 
-.options-nav{
+.options-nav {
   padding: 0px !important;
 }
-
 
 .navbar-toggler {
   border: 0px;
@@ -66,7 +63,9 @@ body {
   transition: opacity 0.6s ease-in-out;
 }
 
-.carousel, .carousel-inner, .carousel-item {
+.carousel,
+.carousel-inner,
+.carousel-item {
   position: absolute;
   top: 0;
   left: 0;
@@ -79,7 +78,6 @@ body {
   height: auto !important;
 }
 
-
 .carousel-indicators {
   position: absolute;
   left: 0;
@@ -90,16 +88,14 @@ body {
   padding-left: 0;
   margin-bottom: 11rem;
   margin-top: -2rem;
-  
 }
-
 
 .carousel-indicators button {
   border-radius: 50%;
   width: 1em !important;
   height: 1em !important;
   margin: 0.3em !important;
-  background-color: #000; 
+  background-color: #000;
 }
 
 .card {
@@ -110,12 +106,12 @@ body {
 }
 
 .card h4 {
-    font-size: 2.5rem;
-    font-family: "Noto Serif Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
+  font-size: 2.5rem;
+  font-family: "Noto Serif Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
 .card p {
@@ -127,8 +123,8 @@ body {
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-z-index: 0;
-width: 100%;
+  z-index: 0;
+  width: 100%;
 }
 
 .botoninscribir {
@@ -147,33 +143,32 @@ width: 100%;
 }
 
 @media (max-width: 768px) {
-  .navbar{
+  .navbar {
     padding: 0px !important;
   }
 
-  .navbar-brand{
+  .navbar-brand {
     width: 4em;
     padding: 0px;
   }
-  .navbar-brand img{
+  .navbar-brand img {
     width: 100%;
     margin-left: 0px !important;
   }
 
   .botonheader {
-    margin-left: -1rem;
-    padding-left: 0px !important;
+    margin-left: 1rem;
+    /* padding-left: 0px !important; */
   }
 
-
-  .botoninscribir{
-    width: 10rem !important; 
+  .botoninscribir {
+    width: 10rem !important;
   }
 
   .navbar-expand-lg .navbar-nav {
     width: 100% !important;
     text-align: center;
-    background-color: #401114; 
+    background-color: #401114;
     z-index: 1;
   }
 }
@@ -183,7 +178,6 @@ width: 100%;
     margin-bottom: 5rem;
   }
 }
-
 
 .main-contenedor {
   position: relative;

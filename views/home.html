@@ -17,9 +17,9 @@
     />
     <link rel="stylesheet" href="styles/home-style.css" />
     <link rel="stylesheet" href="styles/style.css" />
-    <link href="styles/header.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/header-perfil.css">
-    <link rel="icon" href="img/logo.png" type="image/png">
+    <link href="styles/header.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/header-perfil.css" />
+    <link rel="icon" href="img/logo.png" type="image/png" />
     <title>Inicio</title>
   </head>
   <body>
@@ -27,18 +27,34 @@
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="home.html" id="brand">
-            <img src="img/UAD-logo-img.png" alt="UAD" class="d-inline-block align-text-top" />
+            <img
+              src="img/UAD-logo-img.png"
+              alt="UAD"
+              class="d-inline-block align-text-top"
+            />
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="home.html">Inicio</a>
+                <a class="nav-link" aria-current="page" href="home.html"
+                  >Inicio</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Mi Cursada</a>
+                <a class="nav-link" href="verificacionMaterias.html"
+                  >Mi Cursada</a
+                >
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link" href="#"></a>
@@ -46,14 +62,16 @@
             </ul>
             <a class="user-info" href="#">
               Luka Maciel
-              <img src="img/perfil-img.jpg" alt="Foto de perfil">
+              <img src="img/perfil-img.jpg" alt="Foto de perfil" />
             </a>
           </div>
         </div>
       </nav>
       <div class="divider"></div>
       <div class="container-fluid">
-        <a class="navbar-carrera" href="#">Tecnicatura Universitaria en Desarrollo Web</a>
+        <a class="navbar-carrera" href="#"
+          >Tecnicatura Universitaria en Desarrollo Web</a
+        >
       </div>
     </header>
     <div class="background-image">
@@ -63,42 +81,51 @@
         alt="Universidad Nacional Argentina de Desarrollo"
       />
       <div class="blur-overlay"></div>
-      <h1 class="title">Autogestión</h1>
-
-      <div class="row align-items-center">
-        <div class="col">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Mi Cursada</h5>
-              <p class="card-text">
-                Podes ver los datos de las materias que estás cursando
-                actualmente y consultar tu historia académica.
-              </p>
-              <a href="#" class="arrow"><svg xmlns="http://www.w3.org/2000/svg"
-                  class="bi bi-arrow-right-circle"
-                  viewBox="0 0 16 16">
-                  <path
-                    fill-rule="evenodd"
-                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
-                  /></svg></a>
+      <div>
+        <h1 class="title">Autogestión</h1>
+        <div class="row align-items-center">
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Mi Cursada</h5>
+                <p class="card-text">
+                  Podes ver los datos de las materias que estás cursando
+                  actualmente y consultar tu historia académica.
+                </p>
+                <a href="verificacionMaterias.html" class="arrow"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="bi bi-arrow-right-circle"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+                    /></svg
+                ></a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Inscripción a materias</h5>
-              <p class="card-text">
-                Se encuentra disponible la oferta de materias para el próximo
-                cuatrimestre según correlatividad.
-              </p>
-              <a href="ofertaMaterias.html" class="arrow"><svg xmlns="http://www.w3.org/2000/svg"
-                class="bi bi-arrow-right-circle"
-                viewBox="0 0 16 16">
-                <path
-                  fill-rule="evenodd"
-                  d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
-                /></svg></a>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Inscripción a materias</h5>
+                <p class="card-text">
+                  Se encuentra disponible la oferta de materias para el próximo
+                  cuatrimestre según correlatividad.
+                </p>
+                <a href="ofertaMaterias.html" class="arrow"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="bi bi-arrow-right-circle"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+                    /></svg
+                ></a>
+              </div>
             </div>
           </div>
         </div>

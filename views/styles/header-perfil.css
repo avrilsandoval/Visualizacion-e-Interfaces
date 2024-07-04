@@ -30,6 +30,10 @@ header {
     width: 2em;
   }
 
+  .navbar-toggler-icon{
+    margin-left: -0.5rem;
+  }
+
   .bi-list {
     color: white !important;
     width: 1.5em;

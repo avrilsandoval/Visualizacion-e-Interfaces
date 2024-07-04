@@ -123,12 +123,16 @@ main {
 }
 
 .btn-black {
-  background-color: #000000;
-  color: white;
+     border: 0px;
+border-radius: 0.5em;
+background-color: #401115;
+
+height: 2.5em;
+color: white;
 }
 
 .btn-black:hover {
-  background-color: #333333;
+  background-color: #972133;
 }
 
 .progress.stepper {

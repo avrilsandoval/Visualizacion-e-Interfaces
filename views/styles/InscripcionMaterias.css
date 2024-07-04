@@ -95,6 +95,7 @@ main {
 
 .custom-select,
 .btn-custom {
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -177,4 +178,8 @@ main {
     flex-direction: row;
     justify-content: center;
   }
+}
+.form-select,
+.form-select-lg {
+  font-size: 1rem; /* Tamaño de letra reducido */
 }

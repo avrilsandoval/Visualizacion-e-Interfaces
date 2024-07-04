@@ -8,19 +8,19 @@ body {
 
 
 .bg-img-1 {
-  background-image: url('/views/img/universidad-img.jpg');
+  background-image: url('../img/universidad-img.jpg');
   background-size: cover;
   background-position: center;
 }
 
 .bg-img-2 {
-  background-image: url('/views/img/universidad2.jpg');
+  background-image: url('../img/universidad2.jpg');
   background-size: cover;
   background-position: center;
 }
 
 .bg-img-3 {
-  background-image: url('/views/img/universidad3.jpg');
+  background-image: url('../img/universidad3.jpg');
   background-size: cover;
   background-position: center;
 }

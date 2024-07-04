@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/views/img/universidad-img.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/universidad-img.jpg');
     background-size: cover;
     background-attachment: fixed;
     font-family: "Poppins", sans-serif !important;

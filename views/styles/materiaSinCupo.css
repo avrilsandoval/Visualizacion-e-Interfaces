@@ -33,3 +33,32 @@
 .btn-custom{
     width: 30%;
 }
+
+@media (max-width: 768px) {
+    
+    .card{
+        width: 23rem !important;
+        height: max-content;
+    }
+
+    .row {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 17rem !important;
+    }
+
+    .col-md-4 {
+        width: 72% !important;
+    }
+
+    .btn-custom {
+        width: 48% !important;
+    }
+
+    .navbar-carrera {
+        font-size: 0.9rem !important;
+    }
+
+    .navbar-collapse{
+        display: none !important;
+    }
+}

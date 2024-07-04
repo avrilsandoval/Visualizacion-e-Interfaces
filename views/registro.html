@@ -83,55 +83,68 @@
                 </div>
                 
 
-                <form name="formregistro" action="inicioSesion.html" method="get" id="formregistro" name="formregistro" >
+                <form name="formregistro" action="inicioSesion.html" method="get" id="formregistro" class="needs-validation" novalidate>
                     <div class="row mb-2">
-                        <div class="col-md-6 mb-3" >
-                            <input type="text" class="form-control" name="registrar-usuario" placeholder="Nombre completo">
+                        <div class="col-md-6 mb-3">
+                            <input type="text" class="form-control" name="registrar-usuario" placeholder="Nombre completo" required>
+                            <div class="invalid-feedback">
+                                Por favor, ingrese su nombre completo.
+                            </div>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <input type="password" class="form-control" name="registrar-pass" placeholder="Contraseña">
+                            <input type="password" class="form-control" name="registrar-pass" placeholder="Contraseña" required>
+                            <div class="invalid-feedback">
+                                Por favor, ingrese una contraseña.
+                            </div>
                         </div>
                     </div>
-              
+                
                     <div class="row mb-2">
                         <div class="col-md-6 mb-3">
-                            <input type="email" class="form-control" name="email" placeholder="Correo electrónico">
+                            <input type="email" class="form-control" name="email" placeholder="Correo electrónico" required>
+                            <div class="invalid-feedback">
+                                Por favor, ingrese un correo electrónico válido.
+                            </div>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <input type="password" class="form-control" name="registrar-pass2" placeholder="Repetir contraseña">
+                            <input type="password" class="form-control" name="registrar-pass2" placeholder="Repetir contraseña" required>
+                            <div class="invalid-feedback">
+                                Por favor, repita la contraseña.
+                            </div>
                         </div>
                     </div>
                     <div class="row mb-3">
                         <div class="col-md-2 mb-3">
-                            <select class="form-select" name="tipo" aria-label="Default select example">
-                                <option selected>Tipo</option>
+                            <select class="form-select" name="tipo" aria-label="Default select example" required>
+                                <option value="">Tipo</option>
                                 <option value="1">DNI</option>
                                 <option value="2">Pasaporte</option>
                             </select>
+                            <div class="invalid-feedback">
+                                Por favor, seleccione un tipo de documento.
+                            </div>
                         </div>
                         <div class="col-md-4 mb-3">
-                            <input type="number" class="form-control" name="dni" placeholder="Número de documento">
+                            <input type="number" class="form-control" name="dni" placeholder="Número de documento" required>
+                            <div class="invalid-feedback">
+                                Por favor, ingrese su número de documento.
+                            </div>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <input type="date" class="form-control" name="registrar-fecha-nacimiento" placeholder="Fecha de nacimiento">
+                            <input type="date" class="form-control" name="registrar-fecha-nacimiento" placeholder="Fecha de nacimiento" required>
+                            <div class="invalid-feedback">
+                                Por favor, ingrese su fecha de nacimiento.
+                            </div>
                         </div>
-
-
-
                     </div>
-
+                
                     <div class="row justify-content-center mb-3">
-                    
-                        <button type="button" onclick="validar_registro()" class="btn-primary w-50 botonform" id="registrar-boton-login" value="Registrarse">
-
-                           Registrate
-
+                        <button type="submit" class="btn-primary w-50 botonform" id="registrar-boton-login">
+                            Registrate
                         </button>
                     </div>
-           
-                
                 </form>
-          
+                
              <div class="text-center mt-3 textoadicional">
              <label>Si ya tenés cuenta, <a href="inicioSesion.html">Inicia sesión</a> </label>
          </div>
@@ -142,5 +155,28 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
     
+    <script>
+       
+        (function () {
+          'use strict'
+        
+       
+          var forms = document.querySelectorAll('.needs-validation')
+        
+    
+          Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+              form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                  event.preventDefault()
+                  event.stopPropagation()
+                }
+        
+                form.classList.add('was-validated')
+              }, false)
+            })
+        })()
+        </script>
+
 </body>
 </html>

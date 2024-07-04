@@ -139,3 +139,9 @@ font-family: "Poppins", sans-serif !important;
       z-index: 1;
     }
   }
+
+
+  .invalid-feedback{
+    height: 1em;
+    font-size: 0.875em;
+  }

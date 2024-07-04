@@ -1,64 +1,73 @@
 function validar_envio() {
 
+    const form = document.forms['formlogin'];
+    form.classList.add('was-validated');
+    let regexp = /^[0-9a-zA-Z._.-]+@[0-9a-zA-Z._.-]+\.[0-9a-zA-Z]+$/;
 
-    if(document.form.email.value.length==0) {
-        alert("Tenes que escribir tu mail")
-        document.form.email.focus()
-        return 0;
+    let isValid = true;
+    let email = form['email'].value;
+    let contrasena = form['password'].value;
+
+
+    if (contrasena.length === 0) {
+        form['registrar-pass'].setCustomValidity('La contraseña no puede estar vacía');
+        isValid = false;
     }
-    
-    if(document.form.password.value.length==0) {
-        alert("Tienes que escribir una contraseña")
-        document.form.password.focus()
-        return 0;
+
+    if (!regexp.test(email)) {
+        form['email'].setCustomValidity('Introduzca una dirección de email válida');
+        isValid = false;
+    } else {
+        form['email'].setCustomValidity('');
     }
-    
-    document.form.submit();
+
+    if (isValid) {
+        form.submit();
+    }
     
     }
     
     function validar_registro() {
-
-        let usuario = document.formregistro['registrar-usuario'].value;
-        let contrasena = document.formregistro['registrar-pass'].value;
-        let contrasena2 = document.formregistro['registrar-pass2'].value;
-        let fechaNacimientoRegistro = document.formregistro['registrar-fecha-nacimiento'].value;
-        let regexp = /^[0-9a-zA-Z._.-]+\@[0-9a-zA-Z._.-]+\.[0-9a-zA-Z]+$/;
+        const form = document.forms['formregistro'];
+        form.classList.add('was-validated');
     
-        if(usuario.length<4 || usuario.lenght>8) {
-            alert("El nombre tiene que tener entre 4 y 8 caracteres");
-            document.formregistro['registrar-usuario'].focus();
-            return 0;
-        }
+        let isValid = true;
+        let usuario = form['registrar-usuario'].value;
+        let contrasena = form['registrar-pass'].value;
+        let contrasena2 = form['registrar-pass2'].value;
+        let email = form['email'].value;
+        let regexp = /^[0-9a-zA-Z._.-]+@[0-9a-zA-Z._.-]+\.[0-9a-zA-Z]+$/;
     
-        if(contrasena.length == 0) {
-            alert("La contraseña no puede estar vacia");
-            document.formregistro.contrasena.focus();
-            return 0;
-        } else if(contrasena !== contrasena2 ) {
-            alert("Las contraseñas deben ser iguales");
-            document.formregistro.contrasena.focus();
-            return 0;
+     
+        if (usuario.length < 4 || usuario.length > 8) {
+            form['registrar-usuario'].setCustomValidity('El nombre debe tener entre 4 y 8 caracteres');
+            isValid = false;
+        } else {
+            form['registrar-usuario'].setCustomValidity('');
         }
     
-        if(contrasena !== contrasena2 ) {
-            alert("Las contraseñas deben ser iguales");
-            document.formregistro.contrasena2.focus();
-            return 0;
-        }
-        
-        if ((regexp.test(document.formregistro.email.value) == 0) || (document.formregistro.email.value.length = 0))
-        {
-            alert("Introduzca una direccion de email valida");
-            document.formregistro.email.focus();
-            return 0;
-        } 
-        else 
-        {
-            var c_email=true;
+      
+        if (contrasena.length === 0) {
+            form['registrar-pass'].setCustomValidity('La contraseña no puede estar vacía');
+            isValid = false;
+        } else if (contrasena !== contrasena2) {
+            form['registrar-pass'].setCustomValidity('Las contraseñas deben ser iguales');
+            form['registrar-pass2'].setCustomValidity('Las contraseñas deben ser iguales');
+            isValid = false;
+        } else {
+            form['registrar-pass'].setCustomValidity('');
+            form['registrar-pass2'].setCustomValidity('');
         }
     
-        document.formregistro.submit();
-        
+     
+        if (!regexp.test(email)) {
+            form['email'].setCustomValidity('Introduzca una dirección de email válida');
+            isValid = false;
+        } else {
+            form['email'].setCustomValidity('');
         }
-        
+    
+        if (isValid) {
+            form.submit();
+        }
+    }
